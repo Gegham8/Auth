@@ -9,8 +9,6 @@ import { AllExceptionsFilter } from 'src/filter/all.exception.filter';
 import { JwtGuard } from 'src/guards/jwt.guard';
 import { Route } from 'src/constants/constants';
 
-
-
 @UseFilters(AllExceptionsFilter)
 @Controller(Route.entry)
 export class AuthController {
