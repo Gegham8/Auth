@@ -9,16 +9,6 @@ import { AllExceptionsFilter } from 'src/filter/all.exception.filter';
 import { JwtGuard } from 'src/guards/jwt.guard';
 import { Route } from 'src/constants/constants';
 
-// use it for filter
-// @Catch()
-// export class DatabaseErrorFilter extends BaseExceptionFilter {
-//   catch(exception: any, host: ArgumentsHost) {
-//     if (exception.code === 'DATABASE_ERROR_CODE') {
-//       throw new HttpException('Database error', HttpStatus.INTERNAL_SERVER_ERROR);
-//     }
-//     super.catch(exception, host);
-//   }
-// }
 
 
 @UseFilters(AllExceptionsFilter)
